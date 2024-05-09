@@ -1,1 +1,42 @@
 
+
+.house { 
+    margin-right: 10px;
+    color:black;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.house:hover{
+    border-bottom: 3px solid rgb(73, 73, 172);
+}
+.shadowing {
+    
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+html {
+    box-sizing: border-box;
+    /* background-color: gray;   */
+}
+
+.vertical_dotted_line {
+    border-left: 1px dotted black;
+    height: 100px;
+} 
+
+.dropdownAnchor {
+    text-decoration: none;
+    color:black;
+    text-transform:capitalize;
+}
+.dropdownAnchor:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  
+}
+
+.fontTen {
+    font-size: 8px;
+ 
+}

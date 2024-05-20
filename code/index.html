@@ -34,10 +34,11 @@
         <meta name="twitter:image" content="">
         <meta name="twitter:site" content=""> -->
     
-        <script src="scripts.js" defer></script>
+    
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="script.js" defer></script>
     </head>        
     <body>
         <nav class="">
@@ -183,7 +184,7 @@
                                 </div>
                                 <div class="" style="margin-left:5%;margin-top:1%;">
                                     <a class="mb-0 mt-2 small text-center house" style="text-decoration: none;cursor:pointer;">
-                                        EN <span class="bi bi-globe-americas"></span>
+                                        <p id="countryComputer" CLASS="d-inline">EN</p> <span class="bi bi-globe-americas"></span>
                                     </a>
                                 </div>
                                
@@ -198,12 +199,16 @@
         </nav>
 
         <div class="collapse navbar-collapse bg-body-tertiary d-md-none d-lg-none" id="navbarNav">
-            <ul class=" py-2 text-black" >
-                <a href="#" class="text-decoration-none text-dark">For Home</a>
+            <ul class=" py-2 text-black list-unstyled container-fluid" >
+                <li href="#" class=" text-dark dropdown-toggle" data-mdb-ripple-init><a class="text-decoration-none text-black" href="#">For Home</a></li>
                 <br>
-                <a href="#" class="text-decoration-none text-dark">For Business</a>
-
-
+                <li href="#" class=" text-dark dropdown-toggle" data-mdb-ripple-init><a class="text-decoration-none text-black" href="#">For Business</a></li>
+                <br>
+                <li href="#" class=" text-dark dropdown-toggle" data-mdb-ripple-init><a class="text-decoration-none text-black" href="#">Download</a></li>
+                <br>
+                <li href="#" class=" text-dark dropdown-toggle" data-mdb-ripple-init><a class="text-decoration-none text-black" href="#">Support</a></li>
+                <br>
+                <li href="#" class=" text-dark dropdown-toggle" data-mdb-ripple-init><a class="text-decoration-none text-black" href="#">About Us</a></li>
             </ul>
         </div>
         <section class="py-5 container-fluid text-center " >
@@ -266,14 +271,14 @@
                 Choose the option that's right for you:
             </h1>
            
-                <table class="table mx-auto  bg-white table-bordered shadow ">
+                <table class="table mx-auto  bg-white table-bordered shadow">
                     <tbody>
 
 
-                      <tr>
+                      <tr style="">
                         <th scope="row"><img src="../images/optimalizer.png" width="40" height="40"> Optimalizer</th>
-                        <td colspan="2" class="">Free</td>
-                        <td class="text-center">Proffesional 
+                        <td colspan="2" class="" style="width: 25%;" >Free</td>
+                        <td style="width: 25%;"  class="text-center">Proffesional 
                             <p class="text-center fontTen">1 PC | 1 Year   <br>  
                             <span class="bi bi-windows" style="font-size: 15px;"></span> 
                             <p style="font-size: 15px;display: inline;"><del>16$</del> <h6 class="d-inline">10 $</h6> </p>
@@ -281,7 +286,7 @@
                         </p>
                             
                         </td>
-                        <td>Professional Plus</td>
+                        <td style="width: 25%;" >Professional Plus</td>
                       </tr>
                       
                       <tr>
@@ -296,10 +301,12 @@
                         <td><span class="bi bi-check text-center text-black"></span></td>
                         <td><span class="bi bi-check text-center text-black"></span> </td>
                       </tr>
-                      
+                     
+
                     </tbody>
                   </table>
             
         </section>
+
     </body>
 </html>

@@ -1,5 +1,4 @@
 
-
 .house { 
     margin-right: 10px;
     color:black;
@@ -16,6 +15,7 @@
 }
 
 html {
+    overflow-x:hidden;
     box-sizing: border-box;
     /* background-color: gray;   */
 }
@@ -40,3 +40,16 @@ html {
     font-size: 8px;
  
 }
+
+.green { 
+    color:green;
+}
+
+span > .bi-check {
+   color: red;
+}
+
+/* .table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: rgb(56, 56, 143); 
+ } */

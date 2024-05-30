@@ -53,3 +53,15 @@ span > .bi-check {
 .table-striped>tbody>tr:nth-child(odd)>th {
    background-color: rgb(56, 56, 143); 
  } */
+
+
+.carousel-indicators .active{
+    background-color: #f00;
+}
+
+
+
+.carousel-control-next,
+.carousel-control-prev , .carousel-indicators {
+    filter: invert(100%);
+}

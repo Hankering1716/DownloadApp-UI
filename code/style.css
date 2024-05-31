@@ -65,3 +65,15 @@ span > .bi-check {
 .carousel-control-prev , .carousel-indicators {
     filter: invert(100%);
 }
+
+
+
+div.row > div.col > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+div.row > div.col > ul > li > a:hover {
+    text-decoration: underline;
+}
+

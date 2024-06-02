@@ -68,12 +68,27 @@ span > .bi-check {
 
 
 
-div.row > div.col > ul > li > a {
+footer a {
     text-decoration: none;
     color: black;
 }
 
-div.row > div.col > ul > li > a:hover {
+footer  a:hover {
     text-decoration: underline;
 }
 
+/* footer li.header {
+    margin-bottom: 10%;;
+} */
+
+footer .header {
+    font-weight: bold;
+    margin-bottom:5%;
+}
+
+footer .marginIcons {
+    margin-right: 5%;
+    font-size: 15%;
+    float:left;
+    flex-direction: row;
+}

@@ -92,3 +92,15 @@ footer .marginIcons {
     float:left;
     flex-direction: row;
 }
+
+
+
+div > ul {
+    font-weight: normal;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+ 

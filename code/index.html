@@ -59,11 +59,12 @@
                                 aria-expanded="false">
                                 For Home
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu"  data-flip=>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
                                 <div class="row align-items-center">
                                     <div class="col">
-                                        <p style="font-size:10px;" class="text-center">PC APPS</p>
-                                         <ul class="list-unstyled">
+                                     
+                                         <ul class="list-unstyled text-center">
+                                            <li class="text-center d-inline dropdown-header fontTen">PC APPS</li>
                                             <li class="" style="font-size: 10px;"><a href="#"
                                                 class="dropdownAnchor">Optimalizer</a></li>
                                         <li class="" style="font-size: 10px;"><a href="#"
@@ -79,9 +80,9 @@
                                     <div class="col">
                                         <div class="vertical_dotted_line"></div>
                                     </div>
-                                    <div class="col " style="float:left">
-                                        <p style="font-size:10px;" class="text-center">MOBILE APPS</p>
-                                        <ul class="list-unstyled">
+                                    <div class="col " >
+                                        <ul class="list-unstyled text-center" style="margin-right: 25%;">
+                                             <li class="text-center d-inline dropdown-header fontTen">MOBILE APPS</li>
                                             <li style="font-size:10px;"><a href="#" class="dropdownAnchor"
                                                     >Optimalizer For Android</a></li>
                                             <li style="font-size:10px;"><a href="#" class="dropdownAnchor"
@@ -176,12 +177,33 @@
                         </div>
 
                     </div>
-                    <div class="d-none d-md-block">
-                        <a href="#"  class="text-decoration-none  house mb-0  small" id="">
-                           <p class="countryComputer d-inline" ></p>   <!--Add dropdown for country-->
-                           <span class="bi bi-globe-americas"></span>
-                        </a> 
-                    </div>
+                
+                        <div class="d-none d-md-block d-lg-block dropdown ">
+                            <a href="#" class="text-decoration-none  house mb-0 small house "
+                             id="dropdownMenuLanguage" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               <p class="countryComputer d-inline">EN</p>   
+                               <span class="bi bi-globe-americas"></span>
+                            </a> 
+    
+        
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu3" > 
+                                <div class="row align-items-center">
+                                    <div class="col text-center">
+                                        <p style='font-size:10px;' class="text-center">Languages</p>
+                                        <ul class="list-unstyled " >
+                                            <li style='font-size: 10px;'><a class='dropdownAnchor' id="EN" onclick="changeLanguage('EN')" href="#">English</a></li>
+                                            <li style="font-size:10px;"><a class="dropdownAnchor" href="#" id="PL" onclick="changeLanguage('PL')">Polski</a></li>
+                                            <li  style="font-size:10px;" id="IT"><a class="dropdownAnchor" href="#" onclick="changeLanguage('IT')">Italiano
+                                            </a></li>
+                                           
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </ul>
+                       
+                        </div>
+                    
                 </div>
 
             </div>
@@ -438,7 +460,7 @@
                     </td>
                 </tr>
                 <tr class="">
-                    <th scope="row"> Includes CCleaner Pro for PC, Mac, and Android</th>
+                    <th scope="row"> Includes Optimalizer Pro for PC, Mac, and Android</th>
                     <td colspan="2">
 
                     </td>

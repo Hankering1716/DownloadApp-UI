@@ -10,6 +10,8 @@ const Data = new Date();
 document.querySelectorAll('.date').forEach(node => node.innerHTML = Data.getDate() + " " + month[Data.getMonth()] + " " + Data.getFullYear());
 
 
+
+
 console.log(Intl.DateTimeFormat().resolvedOptions().timeZone);
 
 let lang = window.navigator.languages ? window.navigator.languages[0] : null;
@@ -26,3 +28,16 @@ LanguageNames.forEach(element =>
 );
 
 
+
+
+
+
+function changeLanguage(lang) {
+    const LanguageNames = document.querySelectorAll('.countryComputer');
+
+    LanguageNames.forEach(element =>
+        {
+            element.textContent =  lang;
+        });
+
+}

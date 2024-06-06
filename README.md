@@ -1,3 +1,4 @@
+<H1>Optimalizer - UI</H1>
 
 <p>I created a simple app inspired by the CCleaner site (https://www.ccleaner.com/ccleaner/download). I developed this app to learn and apply the best practices used by companies in the real world.</p>
 

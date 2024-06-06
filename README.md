@@ -10,7 +10,7 @@
   <li>Bootstrap 5</li>
 </ul>
 
-<h1>Images</h1>
+<h1>Images & CopyRight</h1>
 
 <img src="https://github.com/Hankering1716/DownloadApp-UI/assets/116718014/e822c030-7d55-40df-b05c-8aeaa07425ae">
 <br>
@@ -19,10 +19,5 @@
 <img src="https://github.com/Hankering1716/DownloadApp-UI/assets/116718014/b828bd21-c470-46f6-8985-0541b8cc44ad">
 
 
-
-
-
-
-
-<p>Feel free to use this code, you can change everything you want and use it 😊</p>
+<p>Feel free to use this code, you can change everything you want</p>
 

@@ -1,4 +1,3 @@
-![image](https://github.com/Hankering1716/DownloadApp-UI/assets/116718014/d3fbf984-1be6-4a70-9f0f-419961027ae2)<H1>Optimalizer - UI</H1>
 
 <p>I created a simple app inspired by the CCleaner site (https://www.ccleaner.com/ccleaner/download). I developed this app to learn and apply the best practices used by companies in the real world.</p>
 

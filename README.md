@@ -11,7 +11,7 @@
 </ul>
 
 <h1>Images</h1>
-![image](https://github.com/Hankering1716/DownloadApp-UI/assets/116718014/de08881b-f780-42a9-9668-0b86d660e7aa)
+![github assets](https://github.com/Hankering1716/DownloadApp-UI/assets/116718014/de08881b-f780-42a9-9668-0b86d660e7aa)
 
 
 

@@ -11,9 +11,9 @@
 </ul>
 
 <h1>Images</h1>
-https://github.com/Hankering1716/DownloadApp-UI/assets/116718014/db2d8a26-2551-4a67-8a26-24bb5978b4a4)
-(https://github.com/Hankering1716/DownloadApp-UI/assets/116718014/4b961fe7-75f0-437a-b81e-b88b6c6a1fda)
-(https://github.com/Hankering1716/DownloadApp-UI/assets/116718014/23f9a270-7334-4301-98fd-e5a28f64f2c0)
+https://github.com/Hankering1716/DownloadApp-UI/assets/116718014/db2d8a26-2551-4a67-8a26-24bb5978b4a4
+https://github.com/Hankering1716/DownloadApp-UI/assets/116718014/4b961fe7-75f0-437a-b81e-b88b6c6a1fda
+https://github.com/Hankering1716/DownloadApp-UI/assets/116718014/23f9a270-7334-4301-98fd-e5a28f64f2c0
 
 
 <p>Feel free to use this code, you can change everything you want and use it 😊</p>

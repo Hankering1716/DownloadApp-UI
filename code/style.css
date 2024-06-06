@@ -1,52 +1,48 @@
-
-.house { 
-    margin-right: 10px;
-    color:black;
-    font-size: 10px;
-    text-decoration: none;
+.house {
+  margin-right: 10px;
+  color: black;
+  font-size: 10px;
+  text-decoration: none;
 }
 
-.house:hover{
-    border-bottom: 3px solid rgb(73, 73, 172);
+.house:hover {
+  border-bottom: 3px solid rgb(73, 73, 172);
 }
 .shadowing {
-    
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
 html {
-    overflow-x:hidden;
-    box-sizing: border-box;
-    /* background-color: gray;   */
+  overflow-x: hidden;
+  box-sizing: border-box;
+  /* background-color: gray;   */
 }
 
 .vertical_dotted_line {
-    border-left: 1px dotted black;
-    height: 100px;
-} 
+  border-left: 1px dotted black;
+  height: 100px;
+}
 
 .dropdownAnchor {
-    text-decoration: none;
-    color:black;
-    text-transform:capitalize;
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
 }
 .dropdownAnchor:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .fontTen {
-    font-size: 8px;
- 
+  font-size: 8px;
 }
 
-.green { 
-    color:green;
+.green {
+  color: green;
 }
 
 span > .bi-check {
-   color: red;
+  color: red;
 }
 
 /* .table-striped>tbody>tr:nth-child(odd)>td, 
@@ -54,27 +50,23 @@ span > .bi-check {
    background-color: rgb(56, 56, 143); 
  } */
 
-
-.carousel-indicators .active{
-    background-color: #f00;
+.carousel-indicators .active {
+  background-color: #f00;
 }
-
-
 
 .carousel-control-next,
-.carousel-control-prev , .carousel-indicators {
-    filter: invert(100%);
+.carousel-control-prev,
+.carousel-indicators {
+  filter: invert(100%);
 }
-
-
 
 footer a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
-footer  a:hover {
-    text-decoration: underline;
+footer a:hover {
+  text-decoration: underline;
 }
 
 /* footer li.header {
@@ -82,25 +74,21 @@ footer  a:hover {
 } */
 
 footer .header {
-    font-weight: bold;
-    margin-bottom:5%;
+  font-weight: bold;
+  margin-bottom: 5%;
 }
 
 footer .marginIcons {
-    margin-right: 5%;
-    font-size: 15%;
-    float:left;
-    flex-direction: row;
+  margin-right: 5%;
+  font-size: 15%;
+  float: left;
+  flex-direction: row;
 }
-
-
 
 div > ul {
-    font-weight: normal;
+  font-weight: normal;
 }
 
-.dropdown:hover>.dropdown-menu {
-    display: block;
-  }
-  
- 
+
+
+

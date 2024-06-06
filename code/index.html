@@ -1,680 +1,694 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Optimalizer</title>
-    <link rel="icon" type="image/x-icon" href="icon.jfif">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../images/optimalizer.png">
-    <meta name="description" content="Computer optimization for improved performance">
-    <meta name="keywords" content="Computer optimization, Performance improvement, System efficiency">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Optimalizer</title>
+        <link rel="icon" type="image/x-icon" href="icon.jfif">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="../images/optimalizer.png">
+        <meta name="description" content="Computer optimization for improved performance">
+        <meta name="keywords" content="Computer optimization, Performance improvement, System efficiency">
 
-    <meta name="robots" content="index,follow">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <meta name="robots" content="index,follow">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--    
             <meta property="fb:page_id" content="">
-        <meta property="og:title" content="">
-        <meta property="og:image" content="">
-        <meta property="og:description" content="">
-        <meta property="og:url" content="">
-        <meta property="og:site_name" content="">
-        <meta property="og:type" content="website">
-    
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:url" content="">
-        <meta name="twitter:title" content="">
-        <meta name="twitter:description" content="">
-        <meta name="twitter:image" content="">
-        <meta name="twitter:site" content=""> -->
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="script.js" defer></script>
-</head>
-
-<body>
-    <nav class="">
-        <div class=" py-2 border-bottom bg-white d-none d-md-block d-lg-block">
-            <div class="container">
-                <div class="text-nowrap  d-flex justify-content-md-between justify-content-between">
-                    <div class="d-none d-md-block">
-                        <p class="mb-0   small">
-                            <a class="navbar-brand shadowing" href="#"><img src="../images/optimalizer.png" alt=""
-                                    width="30" height="25"> Optimalizer</a>
-                            </a>
-                        </p>
-                    </div>
-                    <div class="d-none d-md-block d-inline "  id="divDownloadsParent">
-                        <div class="d-none d-md-block" id="divDownloads">
-                            <a class="house dropdown-toggle" role="button" id="dropdownMenu" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                For Home
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
-                                <div class="row align-items-center">
-                                    <div class="col">
-                                     
-                                         <ul class="list-unstyled text-center">
-                                            <li class="text-center d-inline dropdown-header fontTen">PC APPS</li>
-                                            <li class="" style="font-size: 10px;"><a href="#"
-                                                class="dropdownAnchor">Optimalizer</a></li>
-                                        <li class="" style="font-size: 10px;"><a href="#"
-                                                class="dropdownAnchor">Optimalizer Anti Virus</a></li>
-                                        <li class="" style="font-size: 10px;"><a href="#"
-                                                class="dropdownAnchor">Optimalizer Browser</a></li>
-                                        <li class="" style="font-size: 10px;"><a href="#"
-                                                class="dropdownAnchor">Citte</a></li>
-                                        <li class="" style="font-size: 10px;"><a href="#"
-                                                class="dropdownAnchor">Marqueel</a></li>
-                                         </ul>
-                                    </div>
-                                    <div class="col">
-                                        <div class="vertical_dotted_line"></div>
-                                    </div>
-                                    <div class="col " >
-                                        <ul class="list-unstyled text-center" style="margin-right: 25%;">
-                                             <li class="text-center d-inline dropdown-header fontTen">MOBILE APPS</li>
-                                            <li style="font-size:10px;"><a href="#" class="dropdownAnchor"
-                                                    >Optimalizer For Android</a></li>
-                                            <li style="font-size:10px;"><a href="#" class="dropdownAnchor"
-                                                   >Optimalizer For iOS</a></li>
-                                            <li style="font-size:10px;"><a href="#" class="dropdownAnchor"
-                                                    >Optimalizer For Android</a></li>
-                                            <li style="font-size:10px;"><a href="#" class="dropdownAnchor"
-                                                    >Optimalizer For MAC</a></li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-
-
-
-
-
-                            </ul>
-
-                            <a class="house" href="#" style="text-decoration: none;">
-                                For Business
-                            </a>
-
-                            <a class="house  dropdown-toggle" style="text-decoration: none;cursor: pointer;"
-                                id="dropdownMenu1" data-bs-toggle="dropdown" >
-                                Download
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <div class="row align-items-center">
-                                    <div class="col text-center">
-                                        <p style="font-size:10px;" class="text-center">PC APPS</p>
-                                        <ul class="list-unstyled">
-                                            <li style="font-size:10px;"><a href="#" class="dropdownAnchor" >Download
-                                                Optimalizer</a></li>
-                                        <li style="font-size:10px;"><a href="#" class="dropdownAnchor"> Download
-                                                Optimalizer For MAC</a></li>
-                                        <li style="font-size:10px;"><a href="#" class="dropdownAnchor"
-                                                >Optimalizer For Android</a></li>
-                                        <li style="font-size:10px;"><a href="#" class="dropdownAnchor"
-                                                >Optimalizer For iOS</a></li>
-                                        <li style="font-size:10px;"><a href="#" class="dropdownAnchor" >Download
-                                                Citte</a></li>
-                                        <li style="font-size:10px;"><a href="#" class="dropdownAnchor" >Download
-                                                Marqueel</a></li>
-                                        </ul>
-
-
-                                    </div>
-
-                                </div>
-                            </ul>
-                            <a class="house dropdown-toggle" style="text-decoration: none;cursor:pointer;"
-                                id="dropdownMenu2" data-bs-toggle="dropdown" >
-                                Support
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <div class="row align-items-center">
-                                    <div class="col text-center">
-                                        <p style="font-size:10px;" class="text-center">Product Support</p>
-                                       <ul class="list-unstyled">
-                                        <li style="font-size:10px;"><a href="#" class="dropdownAnchor">Help Center</a>
-                                        </li>
-                                        <li style="font-size:10px;"><a class="dropdownAnchor" href="#">Community
-                                                Forum</a></li>
-                                       </ul>
-                                    </div>
-                                </div>
-                            </ul>
-                            <a class=" house dropdown-toggle" style="text-decoration: none;cursor:pointer;"
-                                id="dropdownMenu3" data-bs-toggle="dropdown">
-                                About Us
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
-                                <div class="row align-items-center">
-                                    <div class="col text-center">
-                                        <p style='font-size:10px;' class="text-center">Company</p>
-                                        <ul class="list-unstyled">
-                                            <li style='font-size: 10px;'><a class='dropdownAnchor' href="#">Blog</a></li>
-                                            <li style="font-size:10px;"><a class="dropdownAnchor" href="#">Newsroom</a></li>
-                                            <li style="font-size:10px;"><a class="dropdownAnchor" href="#">Privacy
-                                                    Policy</a></li>
-                                            <li style="font-size:10px;"><a class="dropdownAnchor" href="#">Terms Of Use</a>
-                                            </li>
-                                            <li style="font-size:10px;"><a class="dropdownAnchor" href="#">Jobs</a></li>
-                                            <li style="font-size:10px;"><a class="dropdownAnchor" href="#">Contact Us</a>
-                                            </li>
-                                        </ul>
-                                        
-                                    </div>
-                                </div>
-                            </ul>
-                        </div>
-
-                    </div>
-                
-                        <div class="d-none d-md-block d-lg-block dropdown ">
-                            <a href="#" class="text-decoration-none  house mb-0 small house "
-                             id="dropdownMenuLanguage" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                               <p class="countryComputer d-inline">EN</p>   
-                               <span class="bi bi-globe-americas"></span>
-                            </a> 
-    
+            <meta property="og:title" content="">
+            <meta property="og:image" content="">
+            <meta property="og:description" content="">
+            <meta property="og:url" content="">
+            <meta property="og:site_name" content="">
+            <meta property="og:type" content="website">
         
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu3" > 
-                                <div class="row align-items-center">
-                                    <div class="col text-center">
-                                        <p style='font-size:10px;' class="text-center">Languages</p>
-                                        <ul class="list-unstyled " >
-                                            <li style='font-size: 10px;'><a class='dropdownAnchor' id="EN" onclick="changeLanguage('EN')" href="#">English</a></li>
-                                            <li style="font-size:10px;"><a class="dropdownAnchor" href="#" id="PL" onclick="changeLanguage('PL')">Polski</a></li>
-                                            <li  style="font-size:10px;" id="IT"><a class="dropdownAnchor" href="#" onclick="changeLanguage('IT')">Italiano
-                                            </a></li>
-                                           
-                                        </ul>
+            <meta name="twitter:card" content="summary">
+            <meta name="twitter:url" content="">
+            <meta name="twitter:title" content="">
+            <meta name="twitter:description" content="">
+            <meta name="twitter:image" content="">
+            <meta name="twitter:site" content=""> -->
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="script.js" defer></script>
+
+        <meta name="google" content="notranslate">
+
+        <noscript>
+            <div class="error message">
+                We're sorry but our site <strong>requires</strong> JavaScript.
+            </div>    
+        </noscript>
+    </head>
+
+
+    <body>
+        <nav class="" onselectstart="return false;">
+            <div class=" py-2 border-bottom bg-white d-none d-md-block d-lg-block">
+                <div class="container">
+                    <div class="text-nowrap  d-flex justify-content-md-between justify-content-between">
+                        <div class="d-none d-md-block">
+                            <p class="mb-0   small">
+                                <a class="navbar-brand shadowing" href="#"><img src="../images/optimalizer.png" alt=""
+                                        width="30" height="25"> Optimalizer</a>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="d-none d-md-block d-inline "  id="divDownloadsParent">
+                            <div class="d-none d-md-block" id="divDownloads">
+                                <a class="house dropdown-toggle dropdown" role="button" id="dropdownMenu" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    For Home
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                    <div class="row align-items-center" class="displayOnHover">
+                                        <div class="col">
                                         
+                                            <ul class="list-unstyled text-center">
+                                                <li class="text-center d-inline dropdown-header fontTen">PC APPS</li>
+                                                <li class="" style="font-size: 10px;"><a href="#"
+                                                    class="dropdownAnchor">Optimalizer</a></li>
+                                            <li class="" style="font-size: 10px;"><a href="#"
+                                                    class="dropdownAnchor">Optimalizer Anti Virus</a></li>
+                                            <li class="" style="font-size: 10px;"><a href="#"
+                                                    class="dropdownAnchor">Optimalizer Browser</a></li>
+                                            <li class="" style="font-size: 10px;"><a href="#"
+                                                    class="dropdownAnchor">Citte</a></li>
+                                            <li class="" style="font-size: 10px;"><a href="#"
+                                                    class="dropdownAnchor">Marqueel</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <div class="vertical_dotted_line"></div>
+                                        </div>
+                                        <div class="col " >
+                                            <ul class="list-unstyled text-center" style="margin-right: 25%;">
+                                                <li class="text-center d-inline dropdown-header fontTen">MOBILE APPS</li>
+                                                <li style="font-size:10px;"><a href="#" class="dropdownAnchor"
+                                                        >Optimalizer For Android</a></li>
+                                                <li style="font-size:10px;"><a href="#" class="dropdownAnchor"
+                                                    >Optimalizer For iOS</a></li>
+                                                <li style="font-size:10px;"><a href="#" class="dropdownAnchor"
+                                                        >Optimalizer For Android</a></li>
+                                                <li style="font-size:10px;"><a href="#" class="dropdownAnchor"
+                                                        >Optimalizer For MAC</a></li>
+                                            </ul>
+                                        </div>
+
                                     </div>
-                                </div>
-                            </ul>
-                       
+
+
+
+
+
+                                </ul>
+
+                                <a class="house" href="#" style="text-decoration: none;">
+                                    For Business
+                                </a>
+
+                                <a class="house  dropdown-toggle" style="text-decoration: none;cursor: pointer;"
+                                    id="dropdownMenu1" data-bs-toggle="dropdown" >
+                                    Download
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <div class="row align-items-center">
+                                        <div class="col text-center">
+                                            <p style="font-size:10px;" class="text-center">PC APPS</p>
+                                            <ul class="list-unstyled">
+                                                <li style="font-size:10px;"><a href="#" class="dropdownAnchor" >Download
+                                                    Optimalizer</a></li>
+                                            <li style="font-size:10px;"><a href="#" class="dropdownAnchor"> Download
+                                                    Optimalizer For MAC</a></li>
+                                            <li style="font-size:10px;"><a href="#" class="dropdownAnchor"
+                                                    >Optimalizer For Android</a></li>
+                                            <li style="font-size:10px;"><a href="#" class="dropdownAnchor"
+                                                    >Optimalizer For iOS</a></li>
+                                            <li style="font-size:10px;"><a href="#" class="dropdownAnchor" >Download
+                                                    Citte</a></li>
+                                            <li style="font-size:10px;"><a href="#" class="dropdownAnchor" >Download
+                                                    Marqueel</a></li>
+                                            </ul>
+
+
+                                        </div>
+
+                                    </div>
+                                </ul>
+                                <a class="house dropdown-toggle" style="text-decoration: none;cursor:pointer;"
+                                    id="dropdownMenu2" data-bs-toggle="dropdown" >
+                                    Support
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <div class="row align-items-center">
+                                        <div class="col text-center">
+                                            <p style="font-size:10px;" class="text-center">Product Support</p>
+                                        <ul class="list-unstyled">
+                                            <li style="font-size:10px;"><a href="#" class="dropdownAnchor">Help Center</a>
+                                            </li>
+                                            <li style="font-size:10px;"><a class="dropdownAnchor" href="#">Community
+                                                    Forum</a></li>
+                                        </ul>
+                                        </div>
+                                    </div>
+                                </ul>
+                                <a class=" house dropdown-toggle" style="text-decoration: none;cursor:pointer;"
+                                    id="dropdownMenu3" data-bs-toggle="dropdown">
+                                    About Us
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                                    <div class="row align-items-center">
+                                        <div class="col text-center">
+                                            <p style='font-size:10px;' class="text-center">Company</p>
+                                            <ul class="list-unstyled">
+                                                <li style='font-size: 10px;'><a class='dropdownAnchor' href="#">Blog</a></li>
+                                                <li style="font-size:10px;"><a class="dropdownAnchor" href="#">Newsroom</a></li>
+                                                <li style="font-size:10px;"><a class="dropdownAnchor" href="#">Privacy
+                                                        Policy</a></li>
+                                                <li style="font-size:10px;"><a class="dropdownAnchor" href="#">Terms Of Use</a>
+                                                </li>
+                                                <li style="font-size:10px;"><a class="dropdownAnchor" href="#">Jobs</a></li>
+                                                <li style="font-size:10px;"><a class="dropdownAnchor" href="#">Contact Us</a>
+                                                </li>
+                                            </ul>
+                                            
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+
                         </div>
                     
-                </div>
-
-            </div>
-
-
-    </nav>
-
-    <nav id="navForPhone" class="border-bottom navbar d-sm-block d-md-none d-lg-none">
-        <div class="d-sm-block d-md-none d-lg-none">
-            <div class="">
-                <div class="py-2  bg-white">
-                    <div class="container">
-                        <div class="text-nowrap  d-flex  justify-content-between ">
-                            <div class="container-fluid">
-                                <p class="mb-0 small">
-                                    <a class="navbar-brand shadowing" href="#"><img src="../images/optimalizer.png"
-                                            alt="" width="30" height="25"> Optimalizer</a>
-                                    </a>
-                                </p>
-                            </div>
-                            <div class="">
-                                <button class="navbar-toggler" type="button" class="navbar-toggler" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
-                                    aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon text-white"></span>
-                                </button>
-
-
-                            </div>
-                            <div class="" style="margin-left:5%;margin-top:1%;">
-                                <a class="mb-0 mt-2 small text-center house"
-                                    style="text-decoration: none;cursor:pointer;">
-                                    <p CLASS="d-inline countryComputer">EN</p> <span 
-                                    class="bi bi-globe-americas d-inline"></span>   <!--Add dropdown for country-->
-                                </a>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        </div>
-    </nav>
-
-    <div class="collapse navbar-collapse bg-body-tertiary d-md-none d-lg-none" id="navbarNav">
-        <ul class=" py-2 text-black list-unstyled container-fluid">
-            <li href="#" class=" text-dark dropdown-toggle" data-mdb-ripple-init><a
-                    class="text-decoration-none text-black" href="#" >For Home</a></li>
-            <br>
-            <li href="#" class=" text-dark dropdown-toggle" data-mdb-ripple-init><a
-                    class="text-decoration-none text-black" href="#">For Business</a></li>
-            <br>
-            <li href="#" class=" text-dark dropdown-toggle" data-mdb-ripple-init><a
-                    class="text-decoration-none text-black" href="#">Download</a></li>
-            <br>
-            <li href="#" class=" text-dark dropdown-toggle" data-mdb-ripple-init><a
-                    class="text-decoration-none text-black" href="#">Support</a></li>
-            <br>
-            <li href="#" class=" text-dark dropdown-toggle" data-mdb-ripple-init><a
-                    class="text-decoration-none text-black" href="#">About Us</a></li>
-        </ul>
-    </div>
-    <section class="py-5 container-fluid text-center ">
-        <img alt="optimalizer logo" src="../images/optimalizer.png" class=" rounded mx-auto d-block" width="40" height="40">
-        <h5 class="text-center">
-            Optimalizer is the best tool for <br> optimizing and make safe your device!
-        </h5>
-        <div class="d-inline-block text-capitalize mb-3">
-            <p class="d-inline mr-2"><span class="bi bi-check green"></span>More space</p>
-            <p class="d-inline mr-2"><span class="bi bi-check green"></span>Better performance</p>
-            <p class="d-inline"><span class="bi bi-check green"></span>More space</p>
-            <p class="d-inline"><span class="bi bi-check green"></span>More space</p>
-        </div>
-        <div class="align-items-center mb-3">
-            <button class="bg-primary btn d-inline text-capitalize">Free download</button>
-            <button class="btn text-capitalize bg-warning">Get Optimalizer Pro</button>
-        </div>
-        <p class="small" style="font-size: 8px;">
-            <span class="bi bi-cloud-check"> 30 day money-back guarantee</span> <br>
-            <span>Optimalizer is also available for <a href="#MAC">Mac</a>, <a href="#ANDROID">Android</a> and <a
-                    href="#iOS">iOS</a></span>
-
-
-        </p>
-    </section>
-    <section class='bg-light shadowing container-fluid '>
-        <h4 class="text-center">Optimalizer in numbers</h4>
-        <div class="row justify-content-between ">
-            <div class="col py-3">
-                <h1 class="d-inline">
-                    35+
-                </h1>
-                <p class="d-inline">
-                    Milions GB space cleaned every month
-                </p>
-            </div>
-            <div class="col py-3">
-                <h1 class="d-inline">
-                    5
-                </h1>
-                <p class="d-inline">
-                    Years of PC optimization experience
-                </p>
-
-            </div>
-            <div class="col py-3">
-                <h1 class="d-inline">
-                    10
-                </h1>
-                <p class="d-inline">
-                    thousands dekstop installations
-                </p>
-            </div>
-
-
-        </div>
-
-    </section>
-
-    <section class="container-fluid d-none d-lg-block d-md-block">
-        <h1 class="text-center h1 py-5">
-            Choose the option that's right for you:
-        </h1>
-
-        <table class="table mx-auto pb-5 table-striped bg-white table-bordered shadow   ">
-            <tbody>
-
-
-                <tr style="position: relative;">
-                    <th scope="row" style="position: relative;"><img alt="optimalizer logo" src="../images/optimalizer.png" width="40"
-                            height="40">
-                        Optimalizer
-
-                        <p class="small fs-6 fw-normal mt-auto  " style="position: absolute;bottom: 0;"><span
-                                class="bi bi-cloud-check"> 30 day money-back guarantee</span> <br></p>
-
-                    </th>
-                    <td colspan="2" style="width: 25%;" class="text-center">
-                        <p class="fw-bold m-0">Free</p>
-                        <p class="text-center fontTen m-0">1 PC<br>
-                            <span class="bi bi-windows" style="font-size: 15px;"></span>
-                        <p style="font-size: 15px;display: inline;"><del class="small"></del>
-                        <h6 class="d-inline">0$</h6>
-                        </p>
-                        <button class="btn btn-primary ">Free Download</button>
-                        </p>
-
-                    <td style="width: 25%;" class="text-center">
-                        <p class="fw-bold m-0">Proffesional</p>
-                        <p class="text-center fontTen m-0">1 PC | 1 Year <br>
-                            <span class="bi bi-windows" style="font-size: 15px;"></span>
-                        <p style="font-size: 15px;display: inline;"><del class="small">16$</del>
-                        <h6 class="d-inline">10$</h6>
-                        </p>
-                        <button class="btn btn-primary ">Get Optimalizer Proffesional</button>
-                        </p>
-
-                    </td>
-                    <td style="width: 25%; " class="text-center">
-                        <p class="fw-bold mb-0">Professional Plus</p>
-
-                        <p class="text-center fontTen mb-0">3 Devices | 1 Year <br>
-                        <div class="d-inline">
-                            <span class="bi bi-windows " style="font-size: 15px;"></span>
-                            <span class="bi bi-android2" style='font-size:15px'></span>
-                            <span class="bi bi-apple" style='font-size:15px'></span>
-                        </div>
-                        <br>
-                        <p style="font-size: 15px;display: inline;"><del class="small">50$</del>
-                        <h6 class="d-inline">40$</h6>
-                        </p>
-                        <button class="btn btn-primary ">Get Optimalizer Plus</button>
-                        </p>
-                    </td>
-
-                </tr>
-
-                <tr>
-                    <th scope="row">Privacy protection</th>
-                    <td colspan="2" class=""><span
-                            class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center font-awesome fs-2"></span>
-                    </td>
-                    <td colspan=""><span
-                            class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
-                    </td>
-                    <td><span
-                            class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">Make Your PC Healthy</th>
-                    <td colspan="2" class=""><span
-                            class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
-                    </td>
-                    <td><span
-                            class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
-                    </td>
-                    <td><span
-                            class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">Update Drivers</th>
-                    <td colspan="2">
-
-                    </td>
-                    <td><span
-                            class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
-                    </td>
-                    <td><span
-                            class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <th scope="row">Boost Performance</th>
-                    <td colspan="2">
-
-                    </td>
-                    <td><span
-                            class="bi bi-check text-center text-black text-center d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
-                    </td>
-                    <td><span
-                            class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <th scope="row">History Cleaning</th>
-                    <td colspan="2">
-
-                    </td>
-                    <td><span
-                            class="bi bi-check text-center text-black text-center d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
-                    </td>
-                    <td><span
-                            class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
-                    </td>
-                </tr>
-
-                <tr class="">
-                    <th scope="row"> Priority customer support</th>
-                    <td colspan="2">
-
-                    </td>
-                    <td><span
-                            class="bi bi-check text-center text-black text-center d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
-                    </td>
-                    <td><span
-                            class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
-                    </td>
-                </tr>
-                <tr class="">
-                    <th scope="row"> Includes Optimalizer Pro for PC, Mac, and Android</th>
-                    <td colspan="2">
-
-                    </td>
-                    <td><span
-                            class="bi bi-check text-center text-black text-center d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
-                    </td>
-                    <td><span
-                            class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
-                    </td>
-                </tr>
-
-
-                <tr class="">
-                    <th scope="row"> Recover Deleted Files</th>
-                    <td colspan="2">
-
-                    </td>
-                    <td><span colspan="2"
-                            class=" text-center text-black text-center d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
-                    </td>
-                    <td><span
-                            class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
-                    </td>
-                </tr>
-                <tr class="">
-                    <th scope="row"> Inspect & Monitor System Info</th>
-                    <td colspan="2">
-
-                    </td>
-                    <td><span colspan="2"
-                            class=" text-center text-black text-center d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
-                    </td>
-                    <td><span
-                            class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <th scope="row"></th>
-                    <td colspan="2" class="text-center"><button class="btn btn-primary  ">Free Download</button></td>
-                    <td colspan="" class="text-center"><button class="btn btn-primary  ">Get Optimalizer
-                            Professional</button></td>
-                    <td colspan="" class="text-center"><button class="btn btn-primary  ">Get Optimalizer Plus</button>
-                    </td>
-                </tr>
-            </tbody>
-
-        </table>
-        <p class="text-center">We accept various payment methods, including:
-            <i class="fa fa-cc-visa" style="color:navy;"></i>
-            <i class="fa fa-cc-amex" style="color:blue;"></i>
-            <i class="fa fa-cc-mastercard" style="color:red;"></i>
-            <i class="fa fa-cc-discover" style="color:orange;"></i>
-        </p>
-    </section>
-    <section class=" shadowing py-5 ">
-        <div class="justify-content-center d-none d-md-flex d-lg-flex"
-            style="display:flex;flex-direction:row;align-items: center;">
-            <img width="80" style="margin-right: 3%;"
-               alt="checkbox" src="https://th.bing.com/th/id/OIP.Rfz_BczThdbQ3W-F1lbI1wHaHa?w=215&h=215&c=7&r=0&o=5&dpr=1.5&pid=1.7">
-            <div style="display: inline;">
-                <p>
-                    <span class="text-center h1">30-DAY MONEY-BACK GUARANTEE</span><br>
-                    <span class="" style="margin-left:15%;"> Get a full refund if we don’t improve your PC’s
-                        performance</span>
-                </p>
-
-            </div>
-            <img width="80" style="margin-left: 3%;" alt="checkbox"
-                src="https://th.bing.com/th/id/OIP.Rfz_BczThdbQ3W-F1lbI1wHaHa?w=215&h=215&c=7&r=0&o=5&dpr=1.5&pid=1.7">
-            </img>
-        </div>
-    </section>
-    <section class="bg-light pt-5">
-        <h1 class="text-center pb-3">What our customers say about Optimalizer</h1>
-        <div id="textCaro" class="carousel slide mt-1 mb-1" data-bs-ride="carousel">
-
-
-            <div class="carousel-inner mb-3 mt-3">
-
-                <div class="carousel-item active w-50" style="margin-left: 25%;">
-                    <div class="card-header">
-                        <h4 class="text-center">"Optimalizer is a fantastic app! It cleared up so much space on my phone
-                            and made it run like new again. The interface is incredibly user-friendly, and it only takes
-                            a few taps to get everything cleaned up. I've tried other cleaners before, but this one
-                            really stands out. Highly recommend!"</h4>
-                        <h5 class="fw-bold text-center">Jane M, <span class="date"></span></h5>
-                    </div>
-                </div>
-
-                <div class="carousel-item w-50" style="margin-left: 25%;">
-                    <div class="card-header">
-                        <h4 class="text-center">"This app is amazing! Optimalizer quickly removes junk files and boosts
-                            my device’s performance. I love how intuitive and easy to use it is. Unlike other apps, it
-                            doesn't bombard me with ads or unnecessary features. It's a must-have for anyone looking to
-                            keep their device running smoothly."
-                        </h4>
-                        <h5 class="fw-bold text-center">Mariusz W, <span class="date"></span></h5>
-                    </div>
-                </div>
-
-                <div class="carousel-item w-50" style="margin-left: 25%;">
-                    <div class="card-header">
-                        <h4 class="text-center">"Optimalizer exceeded my expectations! It’s super efficient at cleaning
-                            and optimizing my phone. I appreciate the straightforward design and how fast it completes
-                            scans. My phone has never run better. If you're looking for a reliable cleaning app, this is
-                            the one to get!"</h4>
-                        <h5 class="fw-bold text-center">Mike H, <span class="date"></span></h5>
-
-                    </div>
-                </div>
-
-
-
-
-            </div>
-            <button class="carousel-control-prev" style="color:red;" type="button" data-bs-target="#textCaro"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next " type="button" data-bs-target="#textCaro" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-
-            <br>
-
-            <div class="carousel-indicators ">
-                <button type="button" data-bs-target="#textCaro" data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#textCaro" data-bs-slide-to="1" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#textCaro" data-bs-slide-to="2" aria-label="Slide 2"></button>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="py-5 text-center justify-content-center w-75" style="margin-left:auto;margin-right: auto;">
-        <div class="text-center" style="clear:left;">
-            <span class="bi bi-gear" style="font-size: 30px"><br></span>
-            <P><span class="fw-bold">System requirements:</span> Runs on Windows 10, 8.1, and 7, including both the
-                32-bit and 64-bit versions. Also compatible with
-                popular Linux distributions and macOS
-            </P>
-            <p>
-                <span class="fw-bold">Optimalizer vB3.92.0451 (<span class="date"></span> ) </span> - <a href="#"
-                    class="text-nowrap">Release Announcement</a>
-            </p>
-        </div>
-    </section>
-
-    <footer class="d-none d-lg-block d-md-block border-top py-5">
-        <div class="container">
-            <div>
-                <div class="row border-bottom">
-                    <div class="col">
-                        <ul class="list-unstyled">
-                            <li class="header"><a href="#HOME">Home</a></li>
-                            <li><a href="#BLOG">Blog</a></li>
-                            <li><a href="#PRODUCTS">Products</a></li>
-                            <li><a href="#SOLUTIONS">Solutions</a></li>
-                            <li><a href="#ABOUT">About</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul class="list-unstyled">
-                            <li class="header">Download</li>
-                            <li><a href="#DOWNLOAD">Optimalizer</a></li>
-                            <li><a href="#OPTIMALIZERADBLOCK"> OPT AdBlock+</a></li>
-                            <li><a href="#CITTE">Citte</a></li>
-                            <li><a href="#MARQUEEL">Marqueel</a></li>
-                        </ul>
-
-                    </div>
-                    <div class="col">
-                        <ul class="list-unstyled">
-                            <li class="header"><a href="#">Support</a></li>
-                            <li><a href="#HELPCENTER">Help Center</a></li>
-                            <li><a href="#COMMUNITY">Community</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul class="list-unstyled">
-                            <li class="header"><a href="#">Business</a></li>
-                            <li><a href="#CLOUD">Business Cloud</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <div id="marginIcons">
-                            <ul class="list-unstyled">
-                                <li><a aria-label="facebook" rel="noopener" href="https://www.facebook.com/" class="bi bi-facebook" target="_blank"></a></li>
-                                <li><a aria-label="instagram" rel="noopener" href="https://www.instagram.com/" class="bi bi-instagram" target="_blank"></a>
-                                </li>
-                                <li><a aria-label="linkedin"rel="noopener" href="https://linkedin.com/" class="bi bi-linkedin" target="_blank"></a></li>
-                                <li><a aria-label="Twitter" rel="noopener" href="https://x.com/" class="bi bi-twitter-x" target="_blank"></a></li>
-                                <li><a aria-label="GitHub" rel="noopener" href="https://github.com/Hankering1716" class="bi bi-github" target="_blank"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="">
-                    <p>
-                        <span class="bi bi-c-circle"></span> Copyright Hankering1716. 
+                            <div class="d-none d-md-block d-lg-block dropdown ">
+                                <a href="#" class="text-decoration-none  house mb-0 small house "
+                                id="dropdownMenuLanguage" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <p class="countryComputer d-inline">EN</p>   
+                                <span class="bi bi-globe-americas"></span>
+                                </a> 
+        
+            
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu3" > 
+                                    <div class="row align-items-center">
+                                        <div class="col text-center">
+                                            <p style='font-size:10px;' class="text-center">Languages</p>
+                                            <ul class="list-unstyled " >
+                                                <li style='font-size: 10px;'><a class='dropdownAnchor' id="EN" onclick="changeLanguage('EN')" href="#">English</a></li>
+                                                <li style="font-size:10px;"><a class="dropdownAnchor" href="#" id="PL" onclick="changeLanguage('PL')">Polski</a></li>
+                                                <li  style="font-size:10px;" id="IT"><a class="dropdownAnchor" href="#" onclick="changeLanguage('IT')">Italiano
+                                                </a></li>
+                                            
+                                            </ul>
+                                            
+                                        </div>
+                                    </div>
+                                </ul>
                         
+                            </div>
+                        
+                    </div>
+
+                </div>
+
+
+        </nav>
+
+        <nav id="navForPhone" class="border-bottom navbar d-sm-block d-md-none d-lg-none">
+            <div class="d-sm-block d-md-none d-lg-none">
+                <div class="">
+                    <div class="py-2  bg-white">
+                        <div class="container">
+                            <div class="text-nowrap  d-flex  justify-content-center">
+                                <div class="container-fluid">
+                                    <p class="mb-0 small">
+                                        <a class="navbar-brand shadowing" href="#"><img src="../images/optimalizer.png"
+                                                alt="" width="30" height="25"> Optimalizer</a>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <button class="navbar-toggler" type="button" class="navbar-toggler" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon text-white"></span>
+                                    </button>
+
+
+                                </div>
+                                <div class="" style="margin-left:5%;margin-top:1%;">
+                                    <a class="mb-0 mt-2 small text-center house"
+                                        style="text-decoration: none;cursor:pointer;">
+                                        <p CLASS="d-inline countryComputer">EN</p> <span 
+                                        class="bi bi-globe-americas d-inline"></span>   <!--Add dropdown for country-->
+                                    </a>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+
+        <div class="collapse navbar-collapse bg-body-tertiary d-md-none d-lg-none" id="navbarNav">
+            <ul class=" py-2 text-black list-unstyled container-fluid">
+                <li href="#" class=" text-dark dropdown-toggle" data-mdb-ripple-init><a
+                        class="text-decoration-none text-black" href="#" >For Home</a></li>
+                <br>
+                <li href="#" class=" text-dark dropdown-toggle" data-mdb-ripple-init><a
+                        class="text-decoration-none text-black" href="#">For Business</a></li>
+                <br>
+                <li href="#" class=" text-dark dropdown-toggle" data-mdb-ripple-init><a
+                        class="text-decoration-none text-black" href="#">Download</a></li>
+                <br>
+                <li href="#" class=" text-dark dropdown-toggle" data-mdb-ripple-init><a
+                        class="text-decoration-none text-black" href="#">Support</a></li>
+                <br>
+                <li href="#" class=" text-dark dropdown-toggle" data-mdb-ripple-init><a
+                        class="text-decoration-none text-black" href="#">About Us</a></li>
+            </ul>
+        </div>
+        <section class="py-5 container-fluid text-center ">
+            <img alt="optimalizer logo" src="../images/optimalizer.png" class=" rounded mx-auto d-block" width="40" height="40">
+            <h5 class="text-center">
+                Optimalizer is the best tool for <br> optimizing and make safe your device!
+            </h5>
+            <div class="d-inline-block text-capitalize mb-3">
+                <p class="d-inline mr-2"><span class="bi bi-check green"></span>More space</p>
+                <p class="d-inline mr-2"><span class="bi bi-check green"></span>Better performance</p>
+                <p class="d-inline"><span class="bi bi-check green"></span>More space</p>
+                <p class="d-inline"><span class="bi bi-check green"></span>More space</p>
+            </div>
+            <div class="align-items-center mb-3">
+                <button class="bg-primary btn d-inline text-capitalize">Free download</button>
+                <button class="btn text-capitalize bg-warning">Get Optimalizer Pro</button>
+            </div>
+            <p class="small" style="font-size: 8px;">
+                <span class="bi bi-cloud-check"> 30 day money-back guarantee</span> <br>
+                <span>Optimalizer is also available for <a href="#MAC">Mac</a>, <a href="#ANDROID">Android</a> and <a
+                        href="#iOS">iOS</a></span>
+
+
+            </p>
+        </section>
+        <section class='bg-light shadowing container-fluid '>
+            <h4 class="text-center">Optimalizer in numbers</h4>
+            <div class="row justify-content-between ">
+                <div class="col py-3">
+                    <h1 class="d-inline">
+                        35+
+                    </h1>
+                    <p class="d-inline">
+                        Milions GB space cleaned every month
                     </p>
                 </div>
+                <div class="col py-3">
+                    <h1 class="d-inline">
+                        5
+                    </h1>
+                    <p class="d-inline">
+                        Years of PC optimization experience
+                    </p>
+
+                </div>
+                <div class="col py-3">
+                    <h1 class="d-inline">
+                        10
+                    </h1>
+                    <p class="d-inline">
+                        thousands dekstop installations
+                    </p>
+                </div>
+
+
             </div>
-        </div>
-    </footer>
+
+        </section>
+
+        <section class="container-fluid d-none d-lg-block d-md-block">
+            <h1 class="text-center h1 py-5">
+                Choose the option that's right for you:
+            </h1>
+
+            <table class="table mx-auto pb-5 table-striped bg-white table-bordered shadow   ">
+                <tbody>
+
+
+                    <tr style="position: relative;">
+                        <th scope="row" style="position: relative;"><img alt="optimalizer logo" src="../images/optimalizer.png" width="40"
+                                height="40">
+                            Optimalizer
+
+                            <p class="small fs-6 fw-normal mt-auto  " style="position: absolute;bottom: 0;"><span
+                                    class="bi bi-cloud-check"> 30 day money-back guarantee</span> <br></p>
+
+                        </th>
+                        <td colspan="2" style="width: 25%;" class="text-center">
+                            <p class="fw-bold m-0">Free</p>
+                            <p class="text-center fontTen m-0">1 PC<br>
+                                <span class="bi bi-windows" style="font-size: 15px;"></span>
+                            <p style="font-size: 15px;display: inline;"><del class="small"></del>
+                            <h6 class="d-inline">0$</h6>
+                            </p>
+                            <button class="btn btn-primary ">Free Download</button>
+                            </p>
+
+                        <td style="width: 25%;" class="text-center">
+                            <p class="fw-bold m-0">Proffesional</p>
+                            <p class="text-center fontTen m-0">1 PC | 1 Year <br>
+                                <span class="bi bi-windows" style="font-size: 15px;"></span>
+                            <p style="font-size: 15px;display: inline;"><del class="small">16$</del>
+                            <h6 class="d-inline">10$</h6>
+                            </p>
+                            <button class="btn btn-primary ">Get Optimalizer Proffesional</button>
+                            </p>
+
+                        </td>
+                        <td style="width: 25%; " class="text-center">
+                            <p class="fw-bold mb-0">Professional Plus</p>
+
+                            <p class="text-center fontTen mb-0">3 Devices | 1 Year <br>
+                            <div class="d-inline">
+                                <span class="bi bi-windows " style="font-size: 15px;"></span>
+                                <span class="bi bi-android2" style='font-size:15px'></span>
+                                <span class="bi bi-apple" style='font-size:15px'></span>
+                            </div>
+                            <br>
+                            <p style="font-size: 15px;display: inline;"><del class="small">50$</del>
+                            <h6 class="d-inline">40$</h6>
+                            </p>
+                            <button class="btn btn-primary ">Get Optimalizer Plus</button>
+                            </p>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Privacy protection</th>
+                        <td colspan="2" class=""><span
+                                class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center font-awesome fs-2"></span>
+                        </td>
+                        <td colspan=""><span
+                                class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
+                        </td>
+                        <td><span
+                                class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Make Your PC Healthy</th>
+                        <td colspan="2" class=""><span
+                                class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
+                        </td>
+                        <td><span
+                                class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
+                        </td>
+                        <td><span
+                                class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Update Drivers</th>
+                        <td colspan="2">
+
+                        </td>
+                        <td><span
+                                class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
+                        </td>
+                        <td><span
+                                class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
+                        </td>
+                    </tr>
+
+                    <tr class="">
+                        <th scope="row">Boost Performance</th>
+                        <td colspan="2">
+
+                        </td>
+                        <td><span
+                                class="bi bi-check text-center text-black text-center d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
+                        </td>
+                        <td><span
+                                class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
+                        </td>
+                    </tr>
+
+                    <tr class="">
+                        <th scope="row">History Cleaning</th>
+                        <td colspan="2">
+
+                        </td>
+                        <td><span
+                                class="bi bi-check text-center text-black text-center d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
+                        </td>
+                        <td><span
+                                class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
+                        </td>
+                    </tr>
+
+                    <tr class="">
+                        <th scope="row"> Priority customer support</th>
+                        <td colspan="2">
+
+                        </td>
+                        <td><span
+                                class="bi bi-check text-center text-black text-center d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
+                        </td>
+                        <td><span
+                                class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <th scope="row"> Includes Optimalizer Pro for PC, Mac, and Android</th>
+                        <td colspan="2">
+
+                        </td>
+                        <td><span
+                                class="bi bi-check text-center text-black text-center d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
+                        </td>
+                        <td><span
+                                class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
+                        </td>
+                    </tr>
+
+
+                    <tr class="">
+                        <th scope="row"> Recover Deleted Files</th>
+                        <td colspan="2">
+
+                        </td>
+                        <td><span colspan="2"
+                                class=" text-center text-black text-center d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
+                        </td>
+                        <td><span
+                                class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <th scope="row"> Inspect & Monitor System Info</th>
+                        <td colspan="2">
+
+                        </td>
+                        <td><span colspan="2"
+                                class=" text-center text-black text-center d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
+                        </td>
+                        <td><span
+                                class="bi bi-check text-center text-black d-flex flex-grow-1 justify-content-center align-items-center fs-2"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row"></th>
+                        <td colspan="2" class="text-center"><button class="btn btn-primary  ">Free Download</button></td>
+                        <td colspan="" class="text-center"><button class="btn btn-primary  ">Get Optimalizer
+                                Professional</button></td>
+                        <td colspan="" class="text-center"><button class="btn btn-primary  ">Get Optimalizer Plus</button>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <p class="text-center">We accept various payment methods, including:
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </p>
+        </section>
+        <!-- <section class="d-sm-block d-lg-none d-md-none">
+                Carousel table here
+        </section> -->
+
+
+        <section class=" shadowing py-5 ">
+            <div class="justify-content-center d-none d-md-flex d-lg-flex"
+                style="display:flex;flex-direction:row;align-items: center;">
+                <img width="80" style="margin-right: 3%;"
+                alt="checkbox" src="https://th.bing.com/th/id/OIP.Rfz_BczThdbQ3W-F1lbI1wHaHa?w=215&h=215&c=7&r=0&o=5&dpr=1.5&pid=1.7">
+                <div style="display: inline;">
+                    <p>
+                        <span class="text-center h1">30-DAY MONEY-BACK GUARANTEE</span><br>
+                        <span class="" style="margin-left:15%;"> Get a full refund if we don’t improve your PC’s
+                            performance</span>
+                    </p>
+
+                </div>
+                <img width="80" style="margin-left: 3%;" alt="checkbox"
+                    src="https://th.bing.com/th/id/OIP.Rfz_BczThdbQ3W-F1lbI1wHaHa?w=215&h=215&c=7&r=0&o=5&dpr=1.5&pid=1.7">
+                </img>
+            </div>
+        </section>
+        <section class="bg-light pt-5">
+            <h1 class="text-center pb-3">What our customers say about Optimalizer</h1>
+            <div id="textCaro" class="carousel slide mt-1 mb-1" data-bs-ride="carousel">
+
+
+                <div class="carousel-inner mb-3 mt-3">
+
+                    <div class="carousel-item active w-50" style="margin-left: 25%;">
+                        <div class="card-header">
+                            <h4 class="text-center">"Optimalizer is a fantastic app! It cleared up so much space on my phone
+                                and made it run like new again. The interface is incredibly user-friendly, and it only takes
+                                a few taps to get everything cleaned up. I've tried other cleaners before, but this one
+                                really stands out. Highly recommend!"</h4>
+                            <h5 class="fw-bold text-center">Jane M, <span class="date"></span></h5>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item w-50" style="margin-left: 25%;">
+                        <div class="card-header">
+                            <h4 class="text-center">"This app is amazing! Optimalizer quickly removes junk files and boosts
+                                my device’s performance. I love how intuitive and easy to use it is. Unlike other apps, it
+                                doesn't bombard me with ads or unnecessary features. It's a must-have for anyone looking to
+                                keep their device running smoothly."
+                            </h4>
+                            <h5 class="fw-bold text-center">Mariusz W, <span class="date"></span></h5>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item w-50" style="margin-left: 25%;">
+                        <div class="card-header">
+                            <h4 class="text-center">"Optimalizer exceeded my expectations! It’s super efficient at cleaning
+                                and optimizing my phone. I appreciate the straightforward design and how fast it completes
+                                scans. My phone has never run better. If you're looking for a reliable cleaning app, this is
+                                the one to get!"</h4>
+                            <h5 class="fw-bold text-center">Mike H, <span class="date"></span></h5>
+
+                        </div>
+                    </div>
 
 
 
-</body>
 
-</html>
+                </div>
+                <button class="carousel-control-prev" style="color:red;" type="button" data-bs-target="#textCaro"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next " type="button" data-bs-target="#textCaro" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                <br>
+
+                <div class="carousel-indicators ">
+                    <button type="button" data-bs-target="#textCaro" data-bs-slide-to="0" class="active" aria-current="true"
+                        aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#textCaro" data-bs-slide-to="1" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#textCaro" data-bs-slide-to="2" aria-label="Slide 2"></button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="py-5 text-center justify-content-center w-75" style="margin-left:auto;margin-right: auto;">
+            <div class="text-center" style="clear:left;">
+                <span class="bi bi-gear" style="font-size: 30px"><br></span>
+                <P><span class="fw-bold">System requirements:</span> Runs on Windows 10, 8.1, and 7, including both the
+                    32-bit and 64-bit versions. Also compatible with
+                    popular Linux distributions and macOS
+                </P>
+                <p>
+                    <span class="fw-bold">Optimalizer vB3.92.0451 (<span class="date"></span> ) </span> - <a href="#"
+                        class="text-nowrap">Release Announcement</a>
+                </p>
+            </div>
+        </section>
+
+        <footer class="d-none d-lg-block d-md-block border-top py-5">
+            <div class="container">
+                <div>
+                    <div class="row border-bottom">
+                        <div class="col">
+                            <ul class="list-unstyled">
+                                <li class="header"><a href="#HOME">Home</a></li>
+                                <li><a href="#BLOG">Blog</a></li>
+                                <li><a href="#PRODUCTS">Products</a></li>
+                                <li><a href="#SOLUTIONS">Solutions</a></li>
+                                <li><a href="#ABOUT">About</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="list-unstyled">
+                                <li class="header">Download</li>
+                                <li><a href="#DOWNLOAD">Optimalizer</a></li>
+                                <li><a href="#OPTIMALIZERADBLOCK"> OPT AdBlock+</a></li>
+                                <li><a href="#CITTE">Citte</a></li>
+                                <li><a href="#MARQUEEL">Marqueel</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="col">
+                            <ul class="list-unstyled">
+                                <li class="header"><a href="#">Support</a></li>
+                                <li><a href="#HELPCENTER">Help Center</a></li>
+                                <li><a href="#COMMUNITY">Community</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="list-unstyled">
+                                <li class="header"><a href="#">Business</a></li>
+                                <li><a href="#CLOUD">Business Cloud</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <div id="marginIcons">
+                                <ul class="list-unstyled">
+                                    <li><a aria-label="facebook" rel="noopener" href="https://www.facebook.com/" class="bi bi-facebook" target="_blank"></a></li>
+                                    <li><a aria-label="instagram" rel="noopener" href="https://www.instagram.com/" class="bi bi-instagram" target="_blank"></a>
+                                    </li>
+                                    <li><a aria-label="linkedin"rel="noopener" href="https://linkedin.com/" class="bi bi-linkedin" target="_blank"></a></li>
+                                    <li><a aria-label="Twitter" rel="noopener" href="https://x.com/" class="bi bi-twitter-x" target="_blank"></a></li>
+                                    <li><a aria-label="GitHub" rel="noopener" href="https://github.com/Hankering1716" class="bi bi-github" target="_blank"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p>
+                            <span class="bi bi-c-circle"></span> Copyright Hankering1716. 
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </body>
+
+    </html>

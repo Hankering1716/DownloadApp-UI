@@ -85,10 +85,15 @@ footer .marginIcons {
   flex-direction: row;
 }
 
-div > ul {
-  font-weight: normal;
+#hidden1 {
+ display: none;
 }
 
+#liPhoneFirst:hover + #hidden1{
+  display:block;
+}
 
-
+#hidden1:hover {
+  display: block;
+}
 

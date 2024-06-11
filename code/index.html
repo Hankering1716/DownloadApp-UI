@@ -193,20 +193,12 @@
                                 </a> 
         
             
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu3" > 
-                                    <div class="row align-items-center">
-                                        <div class="col text-center">
-                                            <p style='font-size:10px;' class="text-center">Languages</p>
-                                            <ul class="list-unstyled " >
-                                                <li style='font-size: 10px;'><a class='dropdownAnchor' id="EN" onclick="changeLanguage('EN')" href="#">English</a></li>
+                                <ul class="dropdown-menu text-center" aria-labelledby="dropdownMenu3" > 
+                                            <ul class="list-unstyled text-center" >
+                                                <li style='font-size: 10px;'><a class='dropdownAnchor text-center' id="EN" onclick="changeLanguage('EN')" href="#">English</a></li>
                                                 <li style="font-size:10px;"><a class="dropdownAnchor" href="#" id="PL" onclick="changeLanguage('PL')">Polski</a></li>
-                                                <li  style="font-size:10px;" id="IT"><a class="dropdownAnchor" href="#" onclick="changeLanguage('IT')">Italiano
-                                                </a></li>
-                                            
+                                                <li  style="font-size:10px;" id="IT"><a class="dropdownAnchor" href="#" onclick="changeLanguage('IT')">Italiano</a></li>
                                             </ul>
-                                            
-                                        </div>
-                                    </div>
                                 </ul>
                         
                             </div>
@@ -240,12 +232,21 @@
 
 
                                 </div>
-                                <div class="" style="margin-left:5%;margin-top:1%;">
-                                    <a class="mb-0 mt-2 small text-center house"
+                                <div class="dropdown  d-md-none d-lg-block fs-4" style="margin-left:5%;">
+                                    <a class="mb-0 mt-2 small text-center house dropleft"  id="dropdownMenuLanguagePhone"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" 
                                         style="text-decoration: none;cursor:pointer;">
                                         <p CLASS="d-inline countryComputer">EN</p> <span 
                                         class="bi bi-globe-americas d-inline"></span>   <!--Add dropdown for country-->
                                     </a>
+
+                                    <ul class="dropdown-menu list-unstyled" style="text-align: center;" aria-labelledby="dropdownMenuLanguagePhone">
+                                        <li style='font-size: 10px;text-align: center;'><a class='dropdownAnchor' id="EN" onclick="changeLanguage('EN')" href="#">English</a></li>
+                                        <li style="font-size:10px;"><a class="dropdownAnchor" href="#" id="PL" onclick="changeLanguage('PL')">Polski</a></li>
+                                        <li  style="font-size:10px;" id="IT"><a class="dropdownAnchor" href="#" onclick="changeLanguage('IT')">Italiano
+                                        </a></li>
+                                    </ul>
+                                    
                                 </div>
 
 
@@ -398,7 +399,7 @@
 
             </p>
         </section>
-        <section class='bg-light shadowing container-fluid '>
+        <section class='bg-light shadowing container-fluid  '>
             <h4 class="text-center">Optimalizer in numbers</h4>
             <div class="row justify-content-between ">
                 <div class="col py-3">
@@ -625,11 +626,25 @@
         <section class="d-sm-block d-lg-none d-md-none py-5">
             <h1 class="text-center text-nowrap">Choose the option that's right for you:</h1>
             <br>
-           
-                    <table class="table" id="tableCenter">
-                      
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <table class="table border" id="tableCenter">
+                      FREE
                         <thead>
-                            
+                                <caption>
+                                    <p class="text-center">We accept various payment methods, including:
+                                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                        <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                    </p>
+                                </caption>
                         </thead>
                         <tbody class="text-capitalize">
                             <tr >
@@ -670,6 +685,127 @@
                             </tr>
                         </tbody>
                     </table>
+                  </div>
+                  <div class="carousel-item">
+                    Proffesional
+                    <table class="table border" id="tableCenter">
+                        <thead>
+                            <caption>
+                                <p class="text-center">We accept various payment methods, including:
+                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                </p>
+                            </caption>
+                    </thead>
+
+                        <tbody class="text-capitalize">
+                            <tr >
+                                <td>Privacy protection</td>
+                                <td>&#x2713</td>
+                            </tr>
+                            <tr>
+                                <td>Make your pc healthy</td>
+                                <td>&#x2713</td>
+                            </tr>
+                            <tr>
+                                <td>Update Drivers</td>
+                                <td class="fw-bold"><span>&#x2713</span></td>
+                            </tr>
+                            <tr>
+                                <td>Boost Performance</td>
+                                <td class="fw-bold"><span>&#x2713</span></td>
+                            </tr>
+                            <tr>
+                                <td>History Cleaning</td>
+                                <td class="fw-bold"><span>&#x2713</span></td>
+                            </tr>
+                            <tr>
+                                <td>Priority customer support</td>
+                                <td class="fw-bold"><span>&#x2713</span></td>
+                            </tr>
+                            <tr>
+                                <td>Includes Optimalizer Pro for PC, Mac, and Android</td>
+                                <td class="fw-bold"><span>&#x2713</span></td>
+                            </tr>
+                            <tr>
+                                <td>Recover Deleted Files</td>
+                                <td class="fw-bold"><span>&#x2715</span></td>
+                            </tr>
+                            <tr>
+                                <td>Inspect & Monitor System Info</td>
+                                <td class="fw-bold"><span>&#x2715</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                  </div>
+                  <div class="carousel-item">
+                    <table class="table border" id="tableCenter">
+                        Proffesional Plus
+                        <thead>
+                            
+                            <caption>
+                                <p class="text-center">We accept various payment methods, including:
+                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                </p>
+                            </caption>
+                        </thead>
+                              <tr >
+                                  <td>Privacy protection</td>
+                                  <td>&#x2713</td>
+                              </tr>
+                              <tr>
+                                  <td>Make your pc healthy</td>
+                                  <td class="fw-bold">&#x2713</td>
+                              </tr>
+                              <tr>
+                                  <td>Update Drivers</td>
+                                  <td class="fw-bold"><span>&#x2713</span></td>
+                              </tr>
+                              <tr>
+                                  <td>Boost Performance</td>
+                                  <td class="fw-bold"><span>&#x2713</span></td>
+                              </tr>
+                              <tr>
+                                  <td>History Cleaning</td>
+                                  <td class="fw-bold"><span>&#x2713</span></td>
+                              </tr>
+                              <tr>
+                                  <td>Priority customer support</td>
+                                  <td class="fw-bold"><span>&#x2713</span></td>
+                              </tr>
+                              <tr>
+                                  <td>Includes Optimalizer Pro for PC, Mac, and Android</td>
+                                  <td class="fw-bold"><span>&#x2713</span></td>
+                              </tr>
+                              <tr>
+                                  <td>Recover Deleted Files</td>
+                                  <td class="fw-bold"><span>&#x2713</span></td>
+                              </tr>
+                              <tr>
+                                  <td>Inspect & Monitor System Info</td>
+                                  <td class="fw-bold"><span>&#x2713</span></td>
+                              </tr>
+                          </tbody>
+                      </table>
+                    
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+                   
                  
         </section>
 

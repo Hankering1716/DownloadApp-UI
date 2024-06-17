@@ -223,7 +223,25 @@
                                         </a>
                                     </p>
                                 </div>
-                                <div class="">
+                                <div class="dropdown d-sm-block  d-md-none d-lg-none fs-5">
+                                    <a class="mb-0 mt-2 small text-center house dropleft"  id="dropdownMenuLanguagePhone"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" 
+                                        style="text-decoration: none;cursor:pointer;">
+                                        <p CLASS="d-inline countryComputer">EN</p> <span 
+                                        class="bi bi-globe-americas d-inline"></span>   <!--Add dropdown for country-->
+                                    </a>
+
+                                    
+                                        <ul class="dropdown-menu list-unstyled" style="text-align: center;" style="margin-top:5%;"  aria-labelledby="dropdownMenuLanguagePhone" >
+                                            <li style='font-size: 10px;text-align: center;'><a class='dropdownAnchor' id="EN" onclick="changeLanguage('EN')" href="#">English</a></li>
+                                            <li style="font-size:10px;"><a class="dropdownAnchor" href="#" id="PL" onclick="changeLanguage('PL')">Polski</a></li>
+                                            <li  style="font-size:10px;" id="IT"><a class="dropdownAnchor" href="#" onclick="changeLanguage('IT')">Italiano
+                                            </a></li>
+                                        </ul>
+                                    
+                                    
+                                </div>
+                                <div class="" style="margin-right:5%;">
                                     <button class="navbar-toggler" type="button" class="navbar-toggler" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
                                         aria-expanded="false" aria-label="Toggle navigation">
@@ -232,22 +250,7 @@
 
 
                                 </div>
-                                <div class="dropdown  d-md-none d-lg-block fs-4" style="margin-left:5%;">
-                                    <a class="mb-0 mt-2 small text-center house dropleft"  id="dropdownMenuLanguagePhone"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" 
-                                        style="text-decoration: none;cursor:pointer;">
-                                        <p CLASS="d-inline countryComputer">EN</p> <span 
-                                        class="bi bi-globe-americas d-inline"></span>   <!--Add dropdown for country-->
-                                    </a>
 
-                                    <ul class="dropdown-menu list-unstyled" style="text-align: center;" aria-labelledby="dropdownMenuLanguagePhone">
-                                        <li style='font-size: 10px;text-align: center;'><a class='dropdownAnchor' id="EN" onclick="changeLanguage('EN')" href="#">English</a></li>
-                                        <li style="font-size:10px;"><a class="dropdownAnchor" href="#" id="PL" onclick="changeLanguage('PL')">Polski</a></li>
-                                        <li  style="font-size:10px;" id="IT"><a class="dropdownAnchor" href="#" onclick="changeLanguage('IT')">Italiano
-                                        </a></li>
-                                    </ul>
-                                    
-                                </div>
 
 
                             </div>
@@ -633,9 +636,11 @@
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <table class="table border" id="tableCenter">
-                      FREE
+                  <div class="carousel-item active" >
+                    <table class="table border" id="tableCenter" data-bs-touch="true">
+                        <div class=" d-flex justify-content-center fs-3 fw-bold">
+                            Free
+                        </div>
                         <thead>
                                 <caption>
                                     <p class="text-center">We accept various payment methods, including:
@@ -687,7 +692,10 @@
                     </table>
                   </div>
                   <div class="carousel-item">
-                    Proffesional
+                    <div class=" d-flex justify-content-center fs-3 fw-bold">
+                        Proffesional
+                    </div>
+                    
                     <table class="table border" id="tableCenter">
                         <thead>
                             <caption>
@@ -743,7 +751,10 @@
                   </div>
                   <div class="carousel-item">
                     <table class="table border" id="tableCenter">
-                        Proffesional Plus
+                        <div class=" d-flex justify-content-center fs-3 fw-bold">
+                            Proffesional Plus
+                        </div>
+                        
                         <thead>
                             
                             <caption>
@@ -828,14 +839,14 @@
                 </img>
             </div>
         </section>
-        <section class="bg-light pt-5">
+        <section class="bg-light py-5">
             <h1 class="text-center pb-3">What our customers say about Optimalizer</h1>
-            <div id="textCaro" class="carousel slide mt-1 mb-1" data-bs-ride="carousel">
+            <div id="textCaro" class="carousel slide mt-1 mb-1" data-bs-ride="carousel" data-interval='1'>
 
 
-                <div class="carousel-inner mb-3 mt-3">
+                <div class="carousel-inner mb-3 mt-3" >
 
-                    <div class="carousel-item active w-50" style="margin-left: 25%;">
+                    <div class="carousel-item active w-50" style="margin-left: 25%;" >
                         <div class="card-header">
                             <h4 class="text-center">"Optimalizer is a fantastic app! It cleared up so much space on my phone
                                 and made it run like new again. The interface is incredibly user-friendly, and it only takes
@@ -901,13 +912,13 @@
                     popular Linux distributions and macOS
                 </P>
                 <p>
-                    <span class="fw-bold">Optimalizer vB3.92.0451 (<span class="date"></span> ) </span> - <a href="#"
+                    <span class="fw-bold">Optimalizer vB3.92.0451 (<span class="date"></span> )  - <a href="#"
                         class="text-nowrap">Release Announcement</a>
                 </p>
             </div>
         </section>
 
-        <footer class="d-none d-lg-block d-md-block border-top py-5">
+        <footer class="d-none d-lg-block d-md-block border-top py-5"> <!--Footer for Medium, Large screens-->
             <div class="container">
                 <div>
                     <div class="row border-bottom">
@@ -957,7 +968,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="">
+                    <div class=" mt-3 fontTen" >
                         <p>
                             <span class="bi bi-c-circle"></span> Copyright Hankering1716. 
                             
@@ -965,6 +976,14 @@
                     </div>
                 </div>
             </div>
+        </footer>
+        <footer class="d-sm-block d-md-none d-lg-none w-50 border-top justify-content-center m-auto text-center"> <!--Footer for small devices-->
+            <div class=" mt-3 fontTen  " >
+
+                <p>
+                    <span class="bi bi-c-circle"></span> Copyright Hankering1716. 
+                    
+                </p>
         </footer>
 
 

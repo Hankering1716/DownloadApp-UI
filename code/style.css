@@ -86,14 +86,114 @@ footer .marginIcons {
 }
 
 #hidden1 {
- display: none;
+  display: none;
+}
+#hidden2 {
+  display: none;
+}
+#hidden3 {
+  display: none;
+}
+#hidden4 {
+  display: none;
 }
 
-#liPhoneFirst:hover + #hidden1{
-  display:block;
+#liPhoneFirst:hover + #hidden1 {
+  display: block;
 }
+#liPhoneSecond:hover + #hidden2 {
+  display: block;
+}
+
+#liPhoneThird:hover + #hidden3 {
+  display: block;
+}
+#liPhoneFour:hover + #hidden4 {
+  display: block;
+}
+
 
 #hidden1:hover {
   display: block;
+}
+#hidden2:hover {
+  display: block;
+}
+#hidden3:hover {
+  display: block;
+}
+#hidden4:hover {
+  display: block;
+}
+
+#hidden1 a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+}
+#hidden2 a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+}
+#hidden3 a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+}
+#hidden4 a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+}
+
+#hidden1 li:hover {
+  text-decoration: underline;
+}
+
+#hidden2 li:hover {
+  text-decoration: underline;
+}
+
+#hidden3 li:hover {
+  text-decoration: underline;
+}
+
+#hidden4 li:hover {
+  text-decoration: underline;
+}
+
+.headerPhone {
+  text-transform: capitalize;
+  color: black;
+  font-size: 10px Im !important;
+  margin-left: 1px;
+  text-decoration: none;
+  margin-top: 5%;
+}
+
+.headerPhone li:hover  {
+  text-decoration: none !important;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.bi-check {
+  font-size: 20px;
+}
+
+#tableCenter {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dropdown-menu {
+  min-width:3px;
+}
+
+td {
+  font-weight: bold;
 }
 

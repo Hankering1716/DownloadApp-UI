@@ -242,7 +242,7 @@
                                     
                                 </div>
                                 <div class="" style="margin-right:5%;">
-                                    <button class="navbar-toggler" type="button" class="navbar-toggler" type="button"
+                                    <button class="navbar-toggler" type="button" class="navbar-toggler" type="button" 
                                         data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
                                         aria-expanded="false" aria-label="Toggle navigation">
                                         <span class="navbar-toggler-icon text-white"></span>
@@ -391,8 +391,8 @@
                 <p class="d-inline"><span class="bi bi-check green"></span>More space</p>
             </div>
             <div class="align-items-center mb-3">
-                <button class="bg-primary btn d-inline text-capitalize" data-mdb-ripple-init data-mdb-ripple-color="light">Free download</button>
-                <button class="btn text-capitalize bg-warning" data-mdb-ripple-init="">Get Optimalizer Pro</button>
+                <button class="btn d-inline text-capitalize" data-mdb-ripple-init data-mdb-ripple-color="light" id="buttonDownload" >Free download</button>
+                <button class="btn text-capitalize text-white " data-mdb-ripple-init="" id="buttonDownloadPremium">Get Optimalizer Pro</button>
             </div>
             <p class="small" style="font-size: 8px;">
                 <span class="bi bi-cloud-check"> 30 day money-back guarantee</span> <br>
@@ -402,12 +402,12 @@
 
             </p>
         </section>
-        <section class='bg-light shadowing container-fluid  '>
+        <section class='bg-light shadow container-fluid  '>
             <h4 class="text-center">Optimalizer in numbers</h4>
             <div class="row justify-content-between ">
                 <div class="col py-3">
                     <h1 class="d-inline">
-                        35+
+                        <img src="../images/35.jfif" height="30"  width="30" alt="35"> 
                     </h1>
                     <p class="d-inline">
                         Milions GB space cleaned every month
@@ -415,7 +415,7 @@
                 </div>
                 <div class="col py-3">
                     <h1 class="d-inline">
-                        5
+                        <img src="../images/5.jfif" height="30" width="30" alt="5">
                     </h1>
                     <p class="d-inline">
                         Years of PC optimization experience
@@ -424,7 +424,8 @@
                 </div>
                 <div class="col py-3">
                     <h1 class="d-inline">
-                        10
+                        <img src="../images/10.jfif" height="30" width="30" alt="10">
+
                     </h1>
                     <p class="d-inline">
                         thousands dekstop installations
@@ -441,7 +442,7 @@
                 Choose the option that's right for you:
             </h1>
 
-            <table class="table mx-auto pb-5 table-striped bg-white table-bordered shadow   ">
+            <table class="table mx-auto pb-5 table-striped bg-white table-bordered    ">
                 <tbody>
 
 
@@ -461,7 +462,7 @@
                             <p style="font-size: 15px;display: inline;"><del class="small"></del>
                             <h6 class="d-inline">0$</h6>
                             </p>
-                            <button class="btn btn-primary ">Free Download</button>
+                            <button class="btn" id="buttonDownload" >Free Download</button>
                             </p>
 
                         <td style="width: 25%;" class="text-center">
@@ -488,7 +489,7 @@
                             <p style="font-size: 15px;display: inline;"><del class="small">50$</del>
                             <h6 class="d-inline">40$</h6>
                             </p>
-                            <button class="btn btn-primary ">Get Optimalizer Plus</button>
+                            <button class="btn" id="buttonDownloadPremium">Get Optimalizer Plus</button>
                             </p>
                         </td>
 
@@ -610,10 +611,10 @@
 
                     <tr>
                         <th scope="row"></th>
-                        <td colspan="2" class="text-center"><button class="btn btn-primary  ">Free Download</button></td>
+                        <td colspan="2" class="text-center"><button class="btn " id="buttonDownload">Free Download</button></td>
                         <td colspan="" class="text-center"><button class="btn btn-primary  ">Get Optimalizer
                                 Professional</button></td>
-                        <td colspan="" class="text-center"><button class="btn btn-primary  ">Get Optimalizer Plus</button>
+                        <td colspan="" class="text-center"><button class="btn" id="buttonDownloadPremium">Get Optimalizer Plus</button>
                         </td>
                     </tr>
                 </tbody>
@@ -821,7 +822,7 @@
         </section>
 
 
-        <section class=" shadowing py-5 ">
+        <section class="  py-5 ">
             <div class="justify-content-center d-none d-md-flex d-lg-flex"
                 style="display:flex;flex-direction:row;align-items: center;">
                 <img width="80" style="margin-right: 3%;"

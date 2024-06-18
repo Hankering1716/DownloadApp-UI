@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
 .house {
   margin-right: 10px;
   color: black;
@@ -197,3 +202,38 @@ td {
   font-weight: bold;
 }
 
+
+#buttonDownload {
+  border: 3px solid #0D6EFD;
+}
+
+#buttonDownload:hover {
+    background-color: #0D6EFD;
+    color:white;
+}
+#buttonDownload:active {
+  background-color: rgb(14, 14, 114);
+  border: 3px solid rgb(14, 14, 114);
+
+}
+
+#buttonDownloadPremium {
+  color:white;
+  background-color: #cb581f;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#buttonDownloadPremium:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+
+#buttonDownloadPremium:active {
+  background-color: #de4d05;
+  border:none
+}
+
+.hidden {
+  display: hidden;
+}

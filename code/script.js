@@ -1,5 +1,3 @@
-
-
 const currentDate = document.querySelectorAll(".date");
 
 const month = [
@@ -52,10 +50,5 @@ function changeLanguage(lang) {
   LanguageNames.forEach((element) => {
     element.textContent = lang;
     document.documentElement.lang = lang.toLowerCase();
-
-
   });
 }
-
-
-
